@@ -1,1 +1,17 @@
+function calc(operation, a, b) {
+  switch (operation) {
+    case "add":
+      return a + b;
 
+    case "multi":
+      return a * b;
+
+    case "substract":
+      return a - b;
+    default:
+      return "Ошибка";
+  }
+}
+console.log(calc("add", 7, 3));
+console.log(calc("multi", 6, 2));
+console.log(calc("substract", 5, 3));
