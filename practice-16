@@ -1,0 +1,17 @@
+//книга
+const phoneBook = {
+"Rita": 89114623539,
+"Ivan Morf": 89112783456,
+"Masha": 89112345678
+};
+console.log(phoneBook);
+
+//нотации точки
+console.log(phoneBook.Rita);
+
+console.log(phoneBook["Ivan Morf"]);
+
+//добавление,удаление,обновление записи в книге
+phoneBook["Misha Nocs"] = 89236587905; //добавить
+phoneBook["Ivan Morf"] = 89112783456;  //обновить
+delete phoneBook["Masha"];  //удалить
