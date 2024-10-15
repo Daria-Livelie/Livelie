@@ -1,0 +1,47 @@
+//Динамическое имя свойства
+const phoneBook = {
+ list:{
+  "Rita": 89114623539,
+  "Ivan Morf": 89112783456,
+  "Masha": 89112345678
+ }
+};
+const fullName = 'Ivan Morf'
+console.log(phoneBook.list[fullName]);
+
+const phoneBook = {
+  list: {
+    "Rita": 89114623539,
+    "Ivan Morf": 89112783456,
+    "Masha": 89112345678,
+  },
+  add(Rita ,89114623539) {
+this.list[Rita]=89114623539;
+  }
+};
+console.log(phoneBook.list['Rita']);
+
+//Оператор
+const phoneBook = {
+ list:{
+  "Rita": 89114623539,
+  "Ivan Morf": 89112783456,
+  "Masha": 89112345678
+ }
+};
+ if (phoneBook.list.Rita) {
+    console.log('Rita is here');
+ }
+ if (phoneBook.list.Misha) {
+    console.log('Misha is here');
+ }
+ console.log(phoneBook.list.Misha);
+
+ const phoneBook = {
+	list: {
+		"Rita": 123456789,
+		"Masha": 987654321,
+	}
+};
+console.log("Rita" in phoneBook.list); 
+
